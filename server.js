@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Model
-const Feedback = require('/opt/render/project/src//models/Feedback');
+const Feedback = require('./models/feedback.js');
 
 // Routes
 app.post('/api/feedback', async (req, res) => {
